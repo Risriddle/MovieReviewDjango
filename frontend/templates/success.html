@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link href="{% static 'css/style2.css' %}" rel="stylesheet">
+</head>
+<body>
+    {% csrf_token %}
+    
+    <form id="movie-form" method="post" action="/success">
+      
+        <input type="text" id="movie-name" name="title" placeholder="Enter movie name">
+        <button type="submit">GO</button>
+        
+    </form>
+    <div id="error-message"></div>
+    <div id="movie-details"></div>
+    
+    <div id="review-section"></div>
+    
+       <script src="{% static 'js/sc.js' %}"></script>  
+             
+</body>
+</html>

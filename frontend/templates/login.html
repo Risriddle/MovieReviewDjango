@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login Page</h1>
+    <form action="#" method="post"> 
+        {% csrf_token %}
+<input placeholder="Enter Username" name="username" type="text"> 
+<input placeholder="Enter Password" name="password" type="password"> 
+         <button>LOGIN</button>   </form>
+        </div> 
+     <script src="{% static 'js/script2.js' %}"></script>  
+      
+    
+</body>
+</html>
